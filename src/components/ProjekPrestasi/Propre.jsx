@@ -1,5 +1,13 @@
-const Propre = () => {
-  return <></>;
-};
 
-export default Propre;
+
+export default function Propre() {
+  
+
+
+  return (
+    <section>
+      <div></div>
+      <div></div>
+    </section>
+  )
+}
