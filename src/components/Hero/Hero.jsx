@@ -1,10 +1,10 @@
 import React from "react";
 import "../../index.css";
-import yearImage from "../../assets/2025.png";
-import "./Hero.css";
+import heroimg from "../../assets/2025.png";
 
 const Hero = () => {
   return (
+
     <div className="bg-black text-red-600 min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-4 sm:px-8 md:px-12 lg:px-20">
 
       {/* kiri atas */}
@@ -30,6 +30,11 @@ const Hero = () => {
 
      
       <p className="font-bold text-[10px] sm:text-sm md:text-base lg:text-lg tracking-[0.2em] mt-8 sm:mt-10 glow-red uppercase text-center">
+
+    <div className="bg-accent text-primary min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+      <img src={heroimg} alt="2025" className="w-[95vw] lg:w-[85vw] lg:mt-28"/>
+      <p className="font-hanson text-sm mt-10 text-center text-blood">
+
         20’s Best Decade Ever
       </p>
     </div>
