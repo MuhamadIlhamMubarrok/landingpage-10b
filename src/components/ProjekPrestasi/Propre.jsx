@@ -1,22 +1,29 @@
+
 import { motion } from "framer-motion"
+
+
 
 export default function Propre() {
   
 
 
   return (
-    <motion.section className="w-24 md:w-36">
+    <motion.section className="bg-accent text-primary">
       <motion.div className="">
-        <h1 className="">Ini Project</h1>
+        <motion.h1 className="text-center">Ini Project</motion.h1>
 
-        <div>
+        <motion.div>
 
-        </div>
+        </motion.div>
       </motion.div>
 
-      <div className="">
-        <h1 className="">Ini Prestasi</h1>
-      </div>
+      <motion.div className="">
+        <motion.h1 className="text-center">Ini Prestasi</motion.h1>
+
+        <motion.div>
+
+        </motion.div>
+      </motion.div>
     </motion.section>
   )
 }
