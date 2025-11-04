@@ -1,6 +1,15 @@
 
 @import "tailwindcss";
 
+/* Tambahkan font face di sini */
+@font-face {
+  font-family: "Hanson";
+  src: url("/fonts/Hanson-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Warna theme kamu tetap */
 @theme {
   
   --color-primary:#B21617; 
@@ -8,4 +17,5 @@
   --color-accent:#141813; 
 }
 
+/* Ini tetap di paling bawah */
 @tailwind utilities;
