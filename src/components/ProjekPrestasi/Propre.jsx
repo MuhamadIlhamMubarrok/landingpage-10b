@@ -5,14 +5,18 @@ export default function Propre() {
 
 
   return (
-    <section className="w-24 md:w-36">
-      <div className="">
+    <motion.section className="w-24 md:w-36">
+      <motion.div className="">
         <h1 className="">Ini Project</h1>
-      </div>
+
+        <div>
+
+        </div>
+      </motion.div>
 
       <div className="">
         <h1 className="">Ini Prestasi</h1>
       </div>
-    </section>
+    </motion.section>
   )
 }
