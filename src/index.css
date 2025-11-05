@@ -30,6 +30,7 @@
   --color-secondary:#DADAD0;
 
   --font-hanson: "Hanson", sans-serif;
+  --font-figtree: "Figtree", sans-serif;
 }
 
 @tailwind utilities;
