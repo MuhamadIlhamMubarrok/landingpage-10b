@@ -15,6 +15,16 @@
   font-style: normal;
 }
 
+@keyframes marquee2 {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee2 {
+  animation: marquee2 12s linear infinite;
+}
+
+
 @theme {
   --color-primary:#B21617;
   --color-secondary:#DADAD0;

@@ -15,7 +15,13 @@ export default function Propre() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        
+        <motion.div>
+          <span></span>
+        </motion.div>
+
+        <motion.div>
+          <span></span>
+        </motion.div>
       </motion.div>
     </motion.section>
   )
