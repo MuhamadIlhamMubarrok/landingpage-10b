@@ -8,6 +8,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Figtree";
+  src: url("/fonts/Figtree-Medium.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 @theme {
   --color-primary:#B21617;
   --color-secondary:#DADAD0;
