@@ -15,14 +15,34 @@
   font-style: normal;
 }
 
-@keyframes marquee2 {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.animate-marquee2 {
-  animation: marquee2 12s linear infinite;
+/* Jalan otomatis */
+.marquee {
+  animation: marquee 18s linear infinite;
 }
+
+/* Hover = berhenti */
+.group:hover .marquee {
+  animation-play-state: paused;
+}
+
+/* Hilangkan scrollbar (tetap bisa scroll manual) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 
 
 @theme {
