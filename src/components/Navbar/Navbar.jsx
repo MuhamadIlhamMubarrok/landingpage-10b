@@ -1,5 +1,4 @@
 import React from 'react'; 
-// Asumsi Anda menggunakan Tailwind CSS (berdasarkan kelas yang ada)
 
 const Navbar = () => {
   return (
