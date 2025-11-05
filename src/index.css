@@ -9,11 +9,8 @@
 }
 
 @theme {
-  
-  --color-primary:#B21617; 
-  --color-secondary:#DADAD0; 
-  --color-accent:#141813; 
-  --color-blood:#FF0002;
+  --color-primary:#B21617;
+  --color-secondary:#DADAD0;
 
   --font-hanson: "Hanson", sans-serif;
 }
