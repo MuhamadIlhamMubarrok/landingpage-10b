@@ -3,14 +3,14 @@
 
 @font-face {
   font-family: "Hanson";
-  src: url("/fonts/Hanson-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/Hanson-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Figtree";
-  src: url("/fonts/Figtree-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/Figtree-Medium.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
