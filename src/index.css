@@ -24,17 +24,15 @@
   }
 }
 
-/* Jalan otomatis */
+
 .marquee {
   animation: marquee 70s linear infinite;
 }
 
-/* Hover = berhenti */
 .group:hover .marquee {
   animation-play-state: paused;
 }
 
-/* Hilangkan scrollbar (tetap bisa scroll manual) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -46,7 +44,7 @@
 
 
 @theme {
-  --color-primary:#B21617;
+  --color-primary:#141813;
   --color-secondary:#DADAD0;
 
   --font-hanson: "Hanson", sans-serif;
