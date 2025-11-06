@@ -12,11 +12,11 @@ import img7 from "../../assets/2025.png"
 export default function Propre() {
   
   const items = [
-   { img: img1, name: "Juara 3 Tahfizh 2022/2023" },
-   { img: img2, name: "Ilham Mubarak" },
-   { img: img3, name: "Ilham Mubarak" },
-   { img: img4, name: "Ilham Mubarak" },
-   { img: img5, name: "Ilham Mubarak" },
+   { img: img1, name: "Juara 3 Tahfizh 22/23" },
+   { img: img2, name: "Medali Emas Taekwondo Bigfest" },
+   { img: img3, name: "Juara 1 Tahfizh 24/25" },
+   { img: img4, name: "Top 8 IDN IT Fest" },
+   { img: img5, name: "Medali Emas Taekwondo KONI Bang Taja" },
    { img: img6, name: "Ilham Mubarak" },
    { img: img7, name: "Ilham Mubarak" },
   ]
