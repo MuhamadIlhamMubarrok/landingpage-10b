@@ -21,6 +21,10 @@ export default function Propre() {
    img7,
   ]
 
+  const looped = [
+    ...images, ...images, ...images
+  ]
+
   return (
     <motion.section className="bg-secondary items-center text-center justify-center flex flex-col min-h-screen">
       <motion.h1
@@ -40,7 +44,7 @@ export default function Propre() {
         viewport={{ once: true }}
       >
         <motion.div className="marquee inline-flex min-w-max">
-          {images.map((src, i) => (
+          {looped.map((src, i) => (
             <img  
               key={i}
               src={src}
@@ -51,7 +55,7 @@ export default function Propre() {
         </motion.div>
 
         <motion.div className="marquee inline-flex min-w-max">
-          {images.map((src, i) => (
+          {looped.map((src, i) => (
             <img 
               key={i + images.length}
               src={src}
