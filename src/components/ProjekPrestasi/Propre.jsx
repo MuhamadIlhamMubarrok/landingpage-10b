@@ -45,15 +45,15 @@ export default function Propre() {
       >
         <motion.div className="marquee inline-flex min-w-max">
           {looped.map((src, i) => (
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mx-16">
               <img 
                 key={i}
                 src={src.img}
                 alt={src.name}
-                className="mx-32 h-12 w-12 object-cover rounded-xl"
+                className=" h-12 w-12 object-cover rounded-xl"
               />
 
-              <h2 className="mt-6 mx-32 font-hanson text-2xl text-primary">
+              <h2 className="mt-6  font-hanson text-2xl text-primary">
                 {src.name}
               </h2>
             </div>
@@ -63,15 +63,15 @@ export default function Propre() {
 
         <motion.div className="marquee inline-flex min-w-max">
           {looped.map((src, i) => (
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mx-16">
               <img 
               key={i + items.length}
               src={src.img}
               alt={src.name}
-              className="mx-32 h-12 w-12 object-cover rounded-xl"
+              className=" h-12 w-12 object-cover rounded-xl"
               />
 
-              <h2 className="mt-6 mx-32 font-hanson text-primary text-2xl">
+              <h2 className="mt-6  font-hanson text-primary text-2xl">
                 {src.name}
               </h2>
             </div>
