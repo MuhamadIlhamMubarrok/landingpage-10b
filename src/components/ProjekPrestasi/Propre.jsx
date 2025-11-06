@@ -28,7 +28,7 @@ export default function Propre() {
   return (
     <motion.section className="bg-secondary items-center text-center justify-center flex flex-col min-h-screen">
       <motion.h1
-        className="text-[4vw] font-hanson text-primary mb-16"
+        className="text-[6vw] md:text-[4vw] font-hanson text-primary mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
