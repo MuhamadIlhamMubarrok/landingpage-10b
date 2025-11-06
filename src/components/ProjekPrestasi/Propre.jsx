@@ -53,7 +53,7 @@ export default function Propre() {
                 className="mx-32 h-12 w-12 object-cover rounded-xl"
               />
 
-              <h2 className="mt-6 font-hanson text-2xl text-primary">
+              <h2 className="mt-6 mx-32 font-hanson text-2xl text-primary">
                 {src.name}
               </h2>
             </div>
@@ -71,7 +71,7 @@ export default function Propre() {
               className="mx-32 h-12 w-12 object-cover rounded-xl"
               />
 
-              <h2 className="mt-6 font-hanson text-primary text-2xl">
+              <h2 className="mt-6 mx-32 font-hanson text-primary text-2xl">
                 {src.name}
               </h2>
             </div>
