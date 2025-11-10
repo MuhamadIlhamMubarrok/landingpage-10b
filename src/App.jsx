@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
+import "./index.css";
 import PageLayout from "./components/Layouts/PageLayout";
 import HeroMemberTransition from "./components/HeroMemberTransition";
 import Galeri from "./components/Galeri/Galeri";
