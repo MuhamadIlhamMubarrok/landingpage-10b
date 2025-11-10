@@ -1,6 +1,6 @@
 const Member = () => {
   return (
-    <section className="h-full flex flex-col overflow-hidden">
+    <section className="h-[300vh] flex flex-col overflow-hidden">
       <div className="relative bg-secondary flex justify-end py-16 z-10">
         <div className="w-full flex flex-col items-end text-right">
           <div className="mb-4 text-2xl font-hanson leading-[1.1] tracking-tight text-primary">
