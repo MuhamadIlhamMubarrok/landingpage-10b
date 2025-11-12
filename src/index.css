@@ -3,23 +3,74 @@
 
 @font-face {
   font-family: "Hanson";
-  src: url("/fonts/Hanson-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/Hanson-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Figtree";
-  src: url("/fonts/Figtree-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/Figtree-Medium.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/HelveticaNowDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.marquee {
+  animation: marquee 70s linear infinite;
+}
+
+.group:hover .marquee {
+  animation-play-state: paused;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
 @theme {
-  --color-primary:#B21617;
-  --color-secondary:#DADAD0;
+  --color-primary:#A6FF4D;
+  --color-secondary:#141813;
 
   --font-hanson: "Hanson", sans-serif;
+  --font-figtree: "Figtree", sans-serif;
+  --font-helvetica: "Helvetica", sans-serif;
 }
 
 @tailwind utilities;
+
+/* html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
