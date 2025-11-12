@@ -1,27 +1,15 @@
 const Member = () => {
   return (
     <section className="h-[300vh] flex flex-col overflow-hidden">
-      <div className="relative bg-secondary flex justify-end py-16 z-10">
-        <div className="w-full flex flex-col items-end text-right">
-          <div className="mb-4 text-2xl font-hanson leading-[1.1] tracking-tight text-primary">
-            <h1 className="mr-12">lorem</h1>
-            <h1 className="mr-12">lorem</h1>
-            <h1 className="mr-12">lorem</h1>
-            <div className="h-1 bg-primary mt-2 w-[clamp(150px,30vw,300px)]"></div>
-          </div>
 
-          <div className="mt-6 font-figtree text-left text-primary">
-            <h2 className="text-lg font-semibold">with lorem ipsum</h2>
-            <p className="text-sm mt-2 leading-relaxed w-40 opacity-90">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
+      <div className="relative h-[40vh] lg:h-[110vh] bg-secondary flex items-center justify-center overflow-hidden px-4">
+        <h1 className="relative z-0 text-[15vw] md:text-[12vw] lg:text-[13vw] font-hanson font-bold leading-[0.9] text-white opacity-95 text-left select-none">
+          YOUR JOURNEY STARTS FROM WITHIN.
+        </h1>
       </div>
 
-      <div className="flex-1 bg-primary flex justify-center items-center relative">
-        <h1 className="text-[70vw] font-hanson text-secondary leading-none scale-x-90">
+      <div className="h-[40vh] lg:h-[150vh] bg-primary flex justify-center items-center relative">
+        <h1 className="text-[20vw] lg:text-[70vw] font-hanson text-secondary leading-none scale-x-90">
           14
         </h1>
       </div>

@@ -7,7 +7,6 @@ const HeroMemberTransition = () => {
   const container = useRef(null);
   const [isDesktop, setIsDesktop] = useState(true);
 
-  // Cek ukuran layar
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 1024);
@@ -28,28 +27,31 @@ const HeroMemberTransition = () => {
   const memberRotate = useTransform(scrollYProgress, [0.5, 1], [5, 0]);
 
   return (
-    <main ref={container} className="relative h-[400vh] overflow-visible bg-primary">
-      <motion.div
-        style={
-          isDesktop
-            ? { scale: heroScale, rotate: heroRotate, zIndex: 1 }
-            : { scale: 1, rotate: 0, zIndex: 1 }
-        }
-        className="sticky top-0 h-screen bg-[#f3f3ef]"
-      >
-        <Hero />
-      </motion.div>
-
-      <motion.div
-        style={
-          isDesktop
-            ? { scale: memberScale, rotate: memberRotate, zIndex: 2 }
-            : { scale: 1, rotate: 0, zIndex: 2 }
-        }
-        className="relative h-screen bg-black"
-      >
+    <main ref={container} className="relative h-[400vh] overflow-visible bg-primary overscroll-none touch-none">
+    <motion.div
+      style={
+        isDesktop
+          ? { scale: heroScale, rotate: heroRotate, zIndex: 1 }
+          : { scale: 1, rotate: 0, zIndex: 1 }
+      }
+      className="sticky top-0 min-h-[100dvh] bg-[#f3f3ef]"
+    >
+      <Hero />
+    </motion.div>
+    
+    <motion.div
+      style={
+        isDesktop
+          ? { scale: memberScale, rotate: memberRotate, zIndex: 2 }
+          : { scale: 1, rotate: 0, zIndex: 2 }
+      }
+      className="relative min-h-[100dvh] bg-transparent overflow-hidden will-change-transform"
+    >
+      <div className="relative z-10">
         <Member />
-      </motion.div>
+      </div>
+      <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+    </motion.div>
     </main>
   );
 };
