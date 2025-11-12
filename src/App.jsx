@@ -7,6 +7,7 @@ import HeroMemberTransition from "./components/HeroMemberTransition";
 import Galeri from "./components/Galeri/Galeri";
 import Propre from "./components/ProjekPrestasi/Propre";
 import Message from "./components/Message/Message";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const App = () => {
       <Galeri />
       <Propre />
       <Message />
+      <Footer />
     </PageLayout>
   );
 };
